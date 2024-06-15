@@ -109,6 +109,20 @@
             font-size: 24px;
             color: #333;
         }
+        @media screen and (max-width: 768px) {
+        .container {
+            max-width: 90%; /* Reduzindo a largura máxima para telas menores */
+        }
+        .login-image {
+            max-width: 50%; /* Ajustando o tamanho da imagem para telas menores */
+        }
+        .input-box input {
+            width: calc(100% - 20px); /* Ajustando o input para telas menores */
+        }
+        .btn input {
+            font-size: 16px; /* Reduzindo o tamanho da fonte do botão para telas menores */
+        }
+    }
     </style>
 </head>
 <body>

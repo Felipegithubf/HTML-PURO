@@ -1,21 +1,26 @@
+/* Estilos para o layout geral */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 
 .container {
     display: flex;
-    height: 100vh;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .sidebar {
     width: 250px;
-    background-color: #2c3e50;
-    color: white;
+    background-color: #2a3e53;
+    color: #fff;
     padding: 20px;
-    box-sizing: border-box;
 }
 
 .profile {
@@ -24,89 +29,106 @@ body {
 }
 
 .profile-img {
-    width: 100px;
-    height: 100px;
-    background-color: #34495e;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
     border-radius: 50%;
-    margin: 0 auto;
+    margin: 0 auto 10px;
 }
 
 .profile h3 {
-    margin: 10px 0 5px 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0 0;
+}
+
+.menu {
+    margin-top: 20px;
 }
 
 .menu a {
     display: block;
-    color: white;
+    color: #fff;
     text-decoration: none;
     padding: 10px 0;
-    transition: background 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .menu a:hover {
-    background-color: #34495e;
+    background-color: #1b2a37;
 }
 
 .main-content {
     flex: 1;
     padding: 20px;
-    box-sizing: border-box;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-.earning, .stats .stat {
-    background-color: #ecf0f1;
-    padding: 20px;
-    border-radius: 8px;
+.earning {
     text-align: center;
-    margin-right: 20px;
 }
 
-.earning h2, .stat h2 {
-    margin: 0;
-    font-size: 18px;
-    color: #34495e;
+.stats {
+    display: flex;
+    justify-content: space-between;
 }
 
-.earning p, .stat p {
-    margin: 5px 0 0 0;
-    font-size: 24px;
-    color: #2c3e50;
+.stat {
+    text-align: center;
+    flex: 1;
 }
 
 .charts {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .chart {
-    background-color: #ecf0f1;
-    padding: 20px;
+    flex-basis: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 15px;
     border-radius: 8px;
-    width: 30%;
-    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .chart h3 {
-    margin: 0 0 10px 0;
     font-size: 18px;
-    color: #34495e;
+    margin-bottom: 10px;
 }
 
 .bar-chart, .pie-chart, .line-chart {
-    background-color: #bdc3c7;
-    height: 150px;
+    height: 200px; /* Ajuste conforme necessário */
+    background-color: #f0f0f0;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #999;
 }
 
+/* Estilos específicos para os gráficos */
+.bar-chart {
+    background-color: #f0f0f0;
+}
 
+.pie-chart {
+    background-color: #f9f9f9;
+}
 
-
-
-
-
+.line-chart {
+    background-color: #f6f6f6;
+}
