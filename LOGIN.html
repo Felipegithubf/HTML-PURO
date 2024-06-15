@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>TELA LOGIN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("image\ \(2\).jpg");
+            backdrop-filter: blur(8px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px; /* Largura máxima do conteúdo */
+            padding: 20px;
+            background-color: #fff; /* Fundo branco para o formulário */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+        }
+        .login-form {
+            width: 100%;
+            text-align: center;
+        }
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .input-box input {
+            width: calc(100% - 30px);
+            padding: 12px; /* Aumentando o padding para maior destaque */
+            background-color: #f9f9f9; /* Fundo mais claro para o input */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.1); /* Sombra interna suave */
+        }
+        .input-box input:focus {
+            border-color: #007bff; /* Cor da borda ao focar */
+            background-color: #fff; /* Fundo branco ao focar */
+            outline: none; /* Remover outline padrão */
+        }
+        .input-box box-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: #888;
+        }
+        .remember {
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #555;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .remember label {
+            margin-bottom: 0;
+        }
+        .btn input {
+            width: 100%;
+            padding: 12px;
+            background-color: #397fca;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px; /* Aumentando o tamanho da fonte */
+            text-transform: uppercase; /* Transformando texto em maiúsculo */
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+        }
+        .btn input:hover {
+            background-color: #5188c4; /* Cor de hover */
+        }
+        p {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        p a {
+            color: #2a3e53;
+            text-decoration: none;
+            margin-left: 5px;
+            transition: color 0.3s ease;
+        }
+        p a:hover {
+            color: #477fbb;
+        }
+        .login-image {
+            max-width: 38%;
+            border-radius: 8px;
+            margin-bottom: 20px; 
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="man-user-circle-icon-removebg-preview.png" alt="Logo" class="login-image">
+        <form class="login-form">
+            <h1>TFT LOGIN</h1>
+            <div class="input-box">
+                <input type="text" placeholder="E-mail" required>
+                <!-- Ícone de usuário -->
+                <box-icon name='user' color='#888'></box-icon>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Senha" required>
+                <!-- Ícone de cadeado -->
+                <box-icon name='lock' color='#888'></box-icon>
+            </div>
+            <div class="remember">
+                <label><input type="checkbox" id=""> Lembrar</label>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+            <div class="btn">
+                <a href="Dashboard/Dashboard.html"><input type="button" value="Login"></a>
+            </div>
+            <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+        </form>
+    </div>
+</body>
+</html>
