@@ -24,9 +24,14 @@
             align-items: center;
             max-width: 400px; /* Largura máxima do conteúdo */
             padding: 20px;
-            background-color: #fff; /* Fundo branco para o formulário */
+            background: none;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+            box-shadow: 0 4px 30px rgba(255,255,255,0.05);
+            backdrop-filter: blur(5.2px);
+            -webkit-backdrop-filter: blur(5.2px);
+            border: 1px solid rgba(255, 255 , 255 , 0.70);
+            background-size: cover;
+
         }
         .login-form {
             width: 100%;
@@ -39,15 +44,15 @@
         .input-box input {
             width: calc(100% - 30px);
             padding: 12px; /* Aumentando o padding para maior destaque */
-            background-color: #f9f9f9; /* Fundo mais claro para o input */
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            background-color: #ffffff; /* Fundo mais claro para o input */
+            border: 1px solid #ffffff;
+            border-radius: 16px;
             font-size: 16px;
             transition: border-color 0.3s ease, background-color 0.3s ease;
             box-shadow: inset 0 1px 2px rgba(0,0,0,0.1); /* Sombra interna suave */
         }
         .input-box input:focus {
-            border-color: #007bff; /* Cor da borda ao focar */
+            border-color: #ffffff; /* Cor da borda ao focar */
             background-color: #fff; /* Fundo branco ao focar */
             outline: none; /* Remover outline padrão */
         }
@@ -56,12 +61,12 @@
             top: 50%;
             right: 10px;
             transform: translateY(-50%);
-            color: #888;
+            color: #c6f2f5;
         }
         .remember {
             margin-bottom: 15px;
             font-size: 14px;
-            color: #555;
+            color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -72,8 +77,8 @@
         .btn input {
             width: 100%;
             padding: 12px;
-            background-color: #397fca;
-            color: #fff;
+            background-color: #aaaaaa;
+            color: #ffffff;
             border: none;
             border-radius: 4px;
             cursor: pointer;
@@ -83,21 +88,22 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
         }
         .btn input:hover {
-            background-color: #5188c4; /* Cor de hover */
+            background-color: #f31212; /* Cor de hover */
         }
         p {
             font-size: 14px;
             text-align: center;
             margin-top: 10px;
+            color: #ffffff;
         }
         p a {
-            color: #2a3e53;
+            color: #d5e63e;
             text-decoration: none;
             margin-left: 5px;
             transition: color 0.3s ease;
         }
         p a:hover {
-            color: #477fbb;
+            color: #ffffff;
         }
         .login-image {
             max-width: 38%;
@@ -107,7 +113,7 @@
         h1 {
             margin-bottom: 20px;
             font-size: 24px;
-            color: #333;
+            color: #ffffff;
         }
         @media screen and (max-width: 768px) {
         .container {
@@ -122,6 +128,8 @@
         .btn input {
             font-size: 16px; /* Reduzindo o tamanho da fonte do botão para telas menores */
         }
+
+   
     }
     </style>
 </head>
@@ -141,8 +149,8 @@
                 <box-icon name='lock' color='#888'></box-icon>
             </div>
             <div class="remember">
-                <label><input type="checkbox" id=""> Lembrar</label>
-                <a href="#">Esqueceu a senha?</a>
+                <label><input type="checkbox" id=""> Mantenha me conectado</label>
+            
             </div>
             <div class="btn">
                 <a href="Dashboard/Dashboard.html"><input type="button" value="Login"></a>
